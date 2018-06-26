@@ -39,7 +39,7 @@ python drive-autosync.py
 
  Run program at startup : https://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login
 
-Run this command at startup : pyton /home/MONDOSSIER/drive-autosync/drive-autosync.py
+Run this command at startup : python /home/MONDOSSIER/drive-autosync/drive-autosync.py
 
 
 # Contributing
