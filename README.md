@@ -43,7 +43,7 @@ git clone https://github.com/simplon-roanne/drive-autosync
 cd ~/drive-autosync
 python drive-autosync.py
 ```
-Si la commande fonctionne, une icone apparaît en haut et la commande tourne en boucle avec le message " Everything up-to date".
+Si la commande fonctionne, une icone apparaît en haut et la commande tourne en boucle avec le message "Resolving... Everything up-to date".
 
 # Configurer le programme au démarrage
 - Taper "Démarrage" ou "Startup" puis cliquer sur "Applications au démarrage" ou l'équivalent anglais.
@@ -56,7 +56,7 @@ Roadmap pour un outil complet :
 - notification en cas d'erreur
 - fichier de log proprement stocké
 - bouton pour quitter depuis l'icone
-- tests automatisés
+- tests automatisés  
 
 # Aller plus loin pour comprendre
 - [Exemple de scripts python](https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts)
