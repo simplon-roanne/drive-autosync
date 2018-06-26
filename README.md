@@ -23,7 +23,7 @@ git clone https://github.com/simplon-roanne/drive-autosync
 
 - Configure Google Drive in your Home Directory
 ```
-gdrive init ~/GDrive
+drive init ~/GDrive
 ```
 - Run program at startup
 - Change frequency
