@@ -1,7 +1,7 @@
 # Drive AutoSync
 
 Drive AutoSync sauvegarde votre dossier personnel ~/GDrive toutes les 2 minutes.
-Une icône alors affichée dans la barre haute de Ubuntu, indiquant si la sauvegarde est effectué ou en attente.
+Une icône est alors affichée dans la barre haute de Ubuntu, indiquant si la sauvegarde est effectué ou en attente.
 
 # Installation
 
@@ -19,7 +19,7 @@ sudo apt-get install drive
 mkdir ~/GDrive
 
 # Initialisation de Google Drive dans le dossier ~/GDrive 
-# !!Attention!! à cette étape : si vous avez une erreur c'est probablement que
+# !!Attention!! à cette étape : si vous avez une erreur c'est peut-être parce que
 # vous n'avez pas le bon programme drive. Me l'indiquer dans ce cas (Gael)
 drive init ~/GDrive
 
@@ -43,6 +43,7 @@ git clone https://github.com/simplon-roanne/drive-autosync
 cd ~/drive-autosync
 python drive-autosync.py
 ```
+Si la commande fonctionne, une icone apparaît en haut et la commande tourne en boucle avec le message " Everything up-to date".
 
 # Configurer le programme au démarrage
 - Taper "Démarrage" ou "Startup" puis cliquer sur "Applications au démarrage" ou l'équivalent anglais.
@@ -51,13 +52,14 @@ python drive-autosync.py
 # Contribuer
 Roadmap pour un outil complet :
 - script d'installation avec configuration du chemin du dossier Google Drive
+- icône plus jolie
 - notification en cas d'erreur
 - fichier de log proprement stocké
 - bouton pour quitter depuis l'icone
 - tests automatisés
 
 # Aller plus loin pour comprendre
-[Exemple de scripts python](https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts)
-[Google Drive CLI ( Command Line Interface )](https://github.com/prasmussen/gdrive)
-[Commande linux apt](https://doc.ubuntu-fr.org/apt)
-[Commande linux pip](https://fr.wikipedia.org/wiki/Pip_(gestionnaire_de_paquets))
+- [Exemple de scripts python](https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts)
+- [Google Drive CLI ( Command Line Interface )](https://github.com/prasmussen/gdrive)
+- [Commande linux apt](https://doc.ubuntu-fr.org/apt)
+- [Commande linux pip](https://fr.wikipedia.org/wiki/Pip_(gestionnaire_de_paquets))
