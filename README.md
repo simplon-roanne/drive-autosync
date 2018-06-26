@@ -11,6 +11,7 @@ Tested on Ubuntu 18.04.
 
 - prasmussen/gdrive
 - PyGObject 
+- daemon ( module python )
 - At the moment the program requires the Google Drive folder to be "~/GDrive" ( needs custom config file )
 
 # Setup
