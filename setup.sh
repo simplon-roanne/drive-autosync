@@ -1,2 +1,0 @@
-wget https://files.pythonhosted.org/packages/f4/59/816004688f8e8602526553cd96226f34657ce4a86daa2240c3eebb0568a3/python_daemon-2.1.2-py2.py3-none-any.whl
-pip install python_daemon-2.1.2-py2.py3-none-any.whl

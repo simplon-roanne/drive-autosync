@@ -15,6 +15,8 @@ Tested on Ubuntu 18.04.
 
 # Setup
 
+You need to install prasmussen/gdrive, and PyGObject.
+
 ```bash
 git clone https://github.com/idmkr/drive-autosync
 python setup.sh
@@ -24,10 +26,8 @@ chmod a+x drive-autosync.sh
 
 # Todo
 
-- Run as proper deamon
-- Quit option on the App Indicator menu
-- Config file ( ~/.drive-autosync )
-- Detect Error status (eg: no update since 10 minutes)
+- Run program at startup
+- Change frequency
 
 # Contributing
 
