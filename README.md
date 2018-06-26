@@ -58,7 +58,8 @@ Roadmap pour un outil complet :
 - bouton pour quitter depuis l'icone
 - tests automatisés  
 
-# Aller plus loin pour comprendre
+# Aller plus loin
+- [Cours Python](https://openclassrooms.com/courses/apprenez-a-programmer-en-python)
 - [Exemple de scripts python](https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts)
 - [Google Drive CLI ( Command Line Interface )](https://github.com/prasmussen/gdrive)
 - [Commande linux apt](https://doc.ubuntu-fr.org/apt)
