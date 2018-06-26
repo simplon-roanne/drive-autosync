@@ -19,21 +19,27 @@ Tested on Ubuntu 18.04.
 You need to install prasmussen/gdrive, and PyGObject.
 
 ```bash
+sudo add-apt-repository ppa:twodopeshaggy/drive
+sudo apt-get update
+sudo apt-get install drive
+drive init ~/GDrive
+sudo apt install gir1.2-appindicator3-0.1
+sudo pip install python-daemon
 git clone https://github.com/simplon-roanne/drive-autosync
-```
-
-- Configure Google Drive in your Home Directory
-```
 drive init ~/GDrive
 ```
-- Run program at startup
-- Change frequency
 
 
 # Usage
 ``` 
 python drive-autosync.py
 ```
+
+# Run at startup
+
+ Run program at startup : https://askubuntu.com/questions/48321/how-do-i-start-applications-automatically-on-login
+
+
 
 # Contributing
 
