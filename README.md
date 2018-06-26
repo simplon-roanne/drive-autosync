@@ -1,47 +1,63 @@
 # Drive AutoSync
 
-Upload changes in your Google Drive folder every few minutes on Linux.
-Displays a status icon ( gnome app indicator ) indicating whether it's up to date or uploading.
+Drive AutoSync sauvegarde votre dossier personnel ~/GDrive toutes les 2 minutes.
+Une icône alors affichée dans la barre haute de Ubuntu, indiquant si la sauvegarde est effectué ou en attente.
 
-It's a very basic automation, intended for personnal use, around the great google drive cli program https://github.com/prasmussen/gdrive.
-
-Tested on Ubuntu 18.04.
-
-# Dependencies
-
-- prasmussen/gdrive
-- PyGObject 
-- daemon ( module python )
-- At the moment the program requires the Google Drive folder to be "~/GDrive" ( needs custom config file )
-
-# Setup
-
-You need to install prasmussen/gdrive, and PyGObject.
+# Installation
 
 ```bash
+# Ajout du registre qui informera le système de l'existence du programme drive
 sudo add-apt-repository ppa:twodopeshaggy/drive
+
+# Mise à jour du système pour que le nouveau registre soit pris en compte
 sudo apt-get update
+
+# Installation du programme drive
 sudo apt-get install drive
+
+# Création du  dossier GDrive dans le dossier home
+mkdir ~/GDrive
+
+# Initialisation de Google Drive dans le dossier ~/GDrive 
+# !!Attention!! à cette étape : si vous avez une erreur c'est probablement que
+# vous n'avez pas le bon programme drive. Me l'indiquer dans ce cas (Gael)
 drive init ~/GDrive
+
+# Maintenant il faut installer les dépendances du projet
+# Cette première dépendance contient la librairie python "appindicator3", installé via "apt"
 sudo apt install gir1.2-appindicator3-0.1
+
+# Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
 sudo pip install python-daemon
+
+# Aller dans le dossier home
+cd 
+
+# Enfin !! On peut télécharger le programme drive-autosync
 git clone https://github.com/simplon-roanne/drive-autosync
-drive init ~/GDrive
 ```
 
 
-# Usage
+# Test de la commande
 ``` 
+cd ~/drive-autosync
 python drive-autosync.py
 ```
 
-# Run at startup
+# Configurer le programme au démarrage
+- Taper "Démarrage" ou "Startup" puis cliquer sur "Applications au démarrage" ou l'équivalent anglais.
+- Créer une nouvelle entrée avec cette commande, que vous devez personnaliser : ```python /home/MONDOSSIER/GDrive/drive-autosync/drive-autosync.py```
 
- Run program at startup : Touche "Windows" Puis taper "Démarrage" ou "Startup"
+# Contribuer
+Roadmap pour un outil complet :
+- script d'installation avec configuration du chemin du dossier Google Drive
+- notification en cas d'erreur
+- fichier de log proprement stocké
+- bouton pour quitter depuis l'icone
+- tests automatisés
 
-Run this command at startup : python /home/MONDOSSIER/drive-autosync/drive-autosync.py
-
-
-# Contributing
-
-Would be amazing and welcomed if you want to build a proper deamon program with me.
+# Aller plus loin pour comprendre
+[Exemple de scripts python](https://fr.wikibooks.org/wiki/Programmation_Python/Exemples_de_scripts)
+[Google Drive CLI ( Command Line Interface )](https://github.com/prasmussen/gdrive)
+[Commande linux apt](https://doc.ubuntu-fr.org/apt)
+[Commande linux pip](https://fr.wikipedia.org/wiki/Pip_(gestionnaire_de_paquets))
