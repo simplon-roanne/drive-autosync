@@ -18,7 +18,7 @@ Tested on Ubuntu 18.04.
 You need to install prasmussen/gdrive, and PyGObject.
 
 ```bash
-git clone https://github.com/idmkr/drive-autosync
+git clone https://github.com/simplon-roanne/drive-autosync
 python drive-autosync.py
 ```
 
