@@ -24,6 +24,10 @@ python drive-autosync.py
 
 # Todo
 
+- Configure Google Drive in your Home Directory
+```
+gdrive init ~/GDrive
+```
 - Run program at startup
 - Change frequency
 
