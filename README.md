@@ -19,9 +19,7 @@ You need to install prasmussen/gdrive, and PyGObject.
 
 ```bash
 git clone https://github.com/idmkr/drive-autosync
-python setup.sh
-chmod a+x drive-autosync.sh
-./driveautosync.sh
+python drive-autosync.py
 ```
 
 # Todo
