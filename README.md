@@ -27,14 +27,18 @@ drive init ~/GDrive
 # Cette première dépendance contient la librairie python "appindicator3", installé via "apt"
 sudo apt install gir1.2-appindicator3-0.1
 
-# Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
-sudo pip install python-daemon
+
 
 # Aller dans le dossier home
 cd 
 
 # Enfin !! On peut télécharger le programme drive-autosync
+sudo apt install git
+
 git clone https://github.com/simplon-roanne/drive-autosync
+
+# Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
+sudo pip install python-daemon
 ```
 
 
