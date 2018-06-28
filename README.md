@@ -31,9 +31,10 @@ sudo apt install gir1.2-appindicator3-0.1
 
 # Aller dans le dossier home
 cd 
+sudo apt install git
 
 # Enfin !! On peut télécharger le programme drive-autosync
-sudo apt install git
+
 
 git clone https://github.com/simplon-roanne/drive-autosync
 
@@ -51,7 +52,7 @@ Si la commande fonctionne, une icone apparaît en haut et la commande tourne en 
 
 # Configurer le programme au démarrage
 - Taper "Démarrage" ou "Startup" puis cliquer sur "Applications au démarrage" ou l'équivalent anglais.
-- Créer une nouvelle entrée avec cette commande, que vous devez personnaliser : ```python /home/MONDOSSIER/GDrive/drive-autosync/drive-autosync.py```
+- Créer une nouvelle entrée avec cette commande, que vous devez personnaliser : ```python /home/MONDOSSIER/drive-autosync/drive-autosync.py```
 
 # Contribuer
 Roadmap pour un outil complet :
