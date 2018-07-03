@@ -6,6 +6,9 @@ Une icône est alors affichée dans la barre haute de Ubuntu, indiquant si la sa
 # Installation
 
 ```bash
+
+Avoir un systême à jour
+
 # Ajout du registre qui informera le système de l'existence du programme drive
 sudo add-apt-repository ppa:twodopeshaggy/drive
 
@@ -22,21 +25,29 @@ mkdir ~/GDrive
 # !!Attention!! à cette étape : si vous avez une erreur c'est peut-être parce que
 # vous n'avez pas le bon programme drive. Me l'indiquer dans ce cas (Gael)
 drive init ~/GDrive
+#Faire un ctrl+clic sur l'URL proposé dans le Terminal
+#Vous connecter avec votre compte et.simplon-roanne et copier-coller le lien obtenu dans le Terminal
+
 
 # Maintenant il faut installer les dépendances du projet
 # Cette première dépendance contient la librairie python "appindicator3", installé via "apt"
 sudo apt install gir1.2-appindicator3-0.1
+# Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
+sudo apt install python-pip
+sudo pip install python-daemon
+
+#Installation de git
+
+sudo apt install git
+
+# Enfin !! On peut télécharger le programme drive-autosync
+
+
+git clone https://github.com/simplon-roanne/drive-autosync
 
 # Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
 sudo apt install python-pip
-
 sudo pip install python-daemon
-
-# Aller dans le dossier home
-cd 
-
-# Enfin !! On peut télécharger le programme drive-autosync
-git clone https://github.com/simplon-roanne/drive-autosync
 ```
 
 
@@ -49,7 +60,7 @@ Si la commande fonctionne, une icone apparaît en haut et la commande tourne en 
 
 # Configurer le programme au démarrage
 - Taper "Démarrage" ou "Startup" puis cliquer sur "Applications au démarrage" ou l'équivalent anglais.
-- Créer une nouvelle entrée avec cette commande, que vous devez personnaliser : ```python /home/MONDOSSIER/GDrive/drive-autosync/drive-autosync.py```
+- Créer une nouvelle entrée avec cette commande, que vous devez personnaliser : ```python /home/MONDOSSIER/drive-autosync/drive-autosync.py```
 
 # Contribuer
 Roadmap pour un outil complet :
