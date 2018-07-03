@@ -28,6 +28,8 @@ drive init ~/GDrive
 sudo apt install gir1.2-appindicator3-0.1
 
 # Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
+sudo apt install python-pip
+
 sudo pip install python-daemon
 
 # Aller dans le dossier home
