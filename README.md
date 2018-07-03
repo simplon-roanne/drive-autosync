@@ -7,8 +7,6 @@ Une icône est alors affichée dans la barre haute de Ubuntu, indiquant si la sa
 
 ```bash
 
-Avoir un systême à jour
-
 # Ajout du registre qui informera le système de l'existence du programme drive
 sudo add-apt-repository ppa:twodopeshaggy/drive
 
