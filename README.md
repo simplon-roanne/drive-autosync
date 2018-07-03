@@ -32,8 +32,9 @@ drive init ~/GDrive
 # Maintenant il faut installer les dépendances du projet
 # Cette première dépendance contient la librairie python "appindicator3", installé via "apt"
 sudo apt install gir1.2-appindicator3-0.1
-
-
+# Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
+sudo apt install python-pip
+sudo pip install python-daemon
 
 #Installation de git
 
@@ -76,4 +77,3 @@ Roadmap pour un outil complet :
 - [Google Drive CLI ( Command Line Interface )](https://github.com/prasmussen/gdrive)
 - [Commande linux apt](https://doc.ubuntu-fr.org/apt)
 - [Commande linux pip](https://fr.wikipedia.org/wiki/Pip_(gestionnaire_de_paquets))
-
