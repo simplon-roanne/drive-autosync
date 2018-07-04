@@ -6,11 +6,14 @@ Une icône est alors affichée dans la barre haute de Ubuntu, indiquant si la sa
 # Installation automatique
 
 ```bash
+sudo apt-get update et installer les MAJs puis redémarrer le laptop.
 cd
+sudo apt install git
 git clone https://github.com/simplon-roanne/drive-autosync
 cd drive-autosync
 sudo chmod a+x setup.sh
 ./setup.sh
+Contrôle clic sur le lien obtenu, se connecter avec son adresse et.simplon, copiez coller le code dans le terminal
 ```
 
 # Installation manuelle
@@ -50,9 +53,7 @@ sudo apt install git
 # Enfin !! On peut télécharger le programme drive-autosync
 git clone https://github.com/simplon-roanne/drive-autosync
 
-# Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
-sudo apt install python-pip
-sudo pip install python-daemon
+
 ```
 
 
