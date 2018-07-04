@@ -8,6 +8,7 @@ Une icône est alors affichée dans la barre haute de Ubuntu, indiquant si la sa
 ```bash
 cd
 git clone https://github.com/simplon-roanne/drive-autosync
+cd drive-autosync
 sudo chmod a+x setup.sh
 ./setup.sh
 ```
