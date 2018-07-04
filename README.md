@@ -3,7 +3,7 @@
 Drive AutoSync sauvegarde votre dossier personnel ~/GDrive toutes les 2 minutes.
 Une icône est alors affichée dans la barre haute de Ubuntu, indiquant si la sauvegarde est effectué ou en attente.
 
-# Installatio automatique
+# Installation automatique
 
 ```bash
 cd
