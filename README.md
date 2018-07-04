@@ -3,7 +3,16 @@
 Drive AutoSync sauvegarde votre dossier personnel ~/GDrive toutes les 2 minutes.
 Une icône est alors affichée dans la barre haute de Ubuntu, indiquant si la sauvegarde est effectué ou en attente.
 
-# Installation
+# Installatio automatique
+
+```bash
+cd
+git clone https://github.com/simplon-roanne/drive-autosync
+sudo chmod a+x setup.sh
+./setup.sh
+```
+
+# Installation manuelle
 
 ```bash
 
@@ -35,12 +44,9 @@ sudo apt install python-pip
 sudo pip install python-daemon
 
 #Installation de git
-
 sudo apt install git
 
 # Enfin !! On peut télécharger le programme drive-autosync
-
-
 git clone https://github.com/simplon-roanne/drive-autosync
 
 # Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
