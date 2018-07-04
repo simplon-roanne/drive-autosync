@@ -52,7 +52,9 @@ sudo apt install git
 
 # Enfin !! On peut télécharger le programme drive-autosync
 git clone https://github.com/simplon-roanne/drive-autosync
-
+# Dernière opération : copier le fichier de configuration .driveignore
+cd drive-autosync
+cp .driveignore ~/GDrive/
 
 ```
 

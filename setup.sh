@@ -32,3 +32,6 @@ sudo apt install git
 # Cette dépendance contient la librairie python-daemon, mais cette fois installée via "pip"
 sudo apt install python-pip
 sudo pip install python-daemon
+
+# Fichier de configuration pour ignorer certains dossiers trop lourds
+cp .driveignore ~/GDrive/
