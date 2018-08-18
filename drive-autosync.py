@@ -34,7 +34,7 @@ class DriveAutoSync(object):
     def startDriveSync(self):
         self.setIndicator("loading")
 
-        thread = threading.Thread(target=runInThread, args=(self.endDriveSync, (['drive push -hidden -no-clobber -no-prompt'])))
+        thread = threading.Thread(target=runInThread, args=(self.endDriveSync, (['tar czf - . | drive push -hidden -no-clobber -no-prompt -ignore-name-clashes'])))
         thread.start()
 
     def endDriveSync(self):
